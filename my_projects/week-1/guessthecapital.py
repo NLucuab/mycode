@@ -66,8 +66,9 @@ if __name__ == "__main__":
 
 
 # stretch goals:
+# * get the user's name and use that throughout the game :) 
 # * Randomize the selection of country, rather than going down the line
 # * Consolidate access to just the dictionary, rather than both the list & dictionary
-# * Give hints, if the user gets it wrong (set # of guesses)
+# * Give hints, if the user gets it wrong (set # of guesses => display that as well)
 # * print out the amount of guesses (per questions) that the user made before they got it correct
 # * add in invalid entry handling(entering a int, float, etc...)
