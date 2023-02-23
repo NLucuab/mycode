@@ -63,3 +63,11 @@ def guess_the_captial():
     print(f"You scored: {correct_guess_count}/10")
 
 guess_the_captial()
+
+"""
+stretch goals:
+* Randomize the selection of country, rather than going down the line
+* Consolidate access to just the dictionary, rather than both the list & dictionary
+* Give hints, if the user gets it wrong (set # of guesses)
+* print out the amount of guesses (per questions) that the user made before they got it correct
+"""
