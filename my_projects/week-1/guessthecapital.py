@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-def guess_the_captial():
+def main():
+    # TODO: Refactor code to only deal with dictionary, rather than both a list & dictionary 
     # populate a countries list 
     countries = [
         "United States of America",
@@ -29,15 +30,13 @@ def guess_the_captial():
         "New Zealand" : "Wellington"
     }
 
-    """
-    have a while loop that will keep going until a counter (equal to the len(countries))
-    reaches 0. 
-        * inside that while loop, ask print out which country the user will be guessing the capital for
-        * keep a variable, starting at 0, to be the idx tracker for the countries list
-        * increment the country_idx counter after every guess
-        * keep a variable that keeps track of correct guesses
-        * increment the correct guess counter when a guess is correct
-    """
+    # have a while loop that will keep going until a counter (equal to the len(countries))
+    # reaches 0. 
+    #     * inside that while loop, ask print out which country the user will be guessing the capital for
+    #     * keep a variable, starting at 0, to be the idx tracker for the countries list
+    #     * increment the country_idx counter after every guess
+    #     * keep a variable that keeps track of correct guesses
+    #     * increment the correct guess counter when a guess is correct
 
     print("Welcome to Guess That Capital! \n")
     country_count = 10
@@ -62,12 +61,13 @@ def guess_the_captial():
     print("Thank you for playing the game! \n")
     print(f"You scored: {correct_guess_count}/10")
 
-guess_the_captial()
+if __name__ == "__main__":
+    main()
 
-"""
-stretch goals:
-* Randomize the selection of country, rather than going down the line
-* Consolidate access to just the dictionary, rather than both the list & dictionary
-* Give hints, if the user gets it wrong (set # of guesses)
-* print out the amount of guesses (per questions) that the user made before they got it correct
-"""
+
+# stretch goals:
+# * Randomize the selection of country, rather than going down the line
+# * Consolidate access to just the dictionary, rather than both the list & dictionary
+# * Give hints, if the user gets it wrong (set # of guesses)
+# * print out the amount of guesses (per questions) that the user made before they got it correct
+# * add in invalid entry handling(entering a int, float, etc...)
