@@ -5,7 +5,7 @@ import crayons
 def commandpush(devicecmd):
 
     for ip in devicecmd.keys():
-        print(f'{crayons.red('Handshaking')}. .. ... connecting with {ip}')
+        print(f'{crayons.red("Handshaking")}. .. ... connecting with {ip}')
         for mycmds in devicecmd[ip]:
             print(f'Attempting to sending command --> {mycmds}')
     return None
