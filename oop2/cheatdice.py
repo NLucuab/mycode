@@ -24,3 +24,9 @@ class Cheat_Loaded_Dice(Player):
             if self.dice[i] < 6:
                 self.dice[i] += 1
             i += 1
+
+# challenge 76 - weighted dice, nothing below a 3
+class Cheat_Weighted_Dice(Player):
+    def cheat(self):
+        if self.dice[0] < 3: # first instance of roll
+            self.dice[0] = random.randint(3,6)
